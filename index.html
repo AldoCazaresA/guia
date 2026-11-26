@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Key Terms & Concepts Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <button class="menu-button" id="menuButton" aria-label="Open chapters">☰</button>
+    <a class="brand" href="#home">Key Terms <span>· Study Guide</span></a>
+    <button class="theme-button" id="themeButton" aria-label="Toggle color theme">◐</button>
+  </header>
+
+  <div class="app-shell">
+    <aside id="sidebar">
+      <p class="eyebrow">Chapters</p>
+      <nav id="chapterNav" aria-label="Chapters"></nav>
+      <a class="quiz-link" href="#quiz">Practice quiz</a>
+      <div class="progress"><div class="progress-label"><span>Progress</span><span id="progressText">0 / 19</span></div><div class="progress-track"><div id="progressFill"></div></div></div>
+    </aside>
+    <main id="main" tabindex="-1"><p class="loading">Loading study guide…</p></main>
+  </div>
+
+  <footer>Key Terms & Concepts · 19 chapters</footer>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
